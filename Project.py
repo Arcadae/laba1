@@ -18,7 +18,7 @@ book={
 
 try:
     with open('lorem.txt') as file:
-        string_with_symbols=file.read()
+        string_with_symbols=file.read(1024)
 except FileNotFoundError:
     sys.exit('<<NOT FOUND>>')
 
